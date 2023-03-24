@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+ main() {
+    int age;
+    float height, weight, gpa;
+    char gender;
+printf("\t\t\t\t\t\t*******************\n");
+printf("\t\t\t\t\t\t* Bangladesh Army *\n");
+printf("\t\t\t\t\t\t*******************\n");
+
+    // Input data
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your gender (M/F): ");
+    scanf(" %c", &gender);
+
+    printf("Enter your height(in meter(s)) : ");
+    scanf("%f", &height);
+
+    printf("Enter your weight (in KG): ");
+    scanf("%f", &weight);
+
+    printf("Enter your GPA(S.S.C/Equivalent): ");
+    scanf("%f", &gpa);
+
+
+    if (age >= 17 && age <= 20 && gpa >= 3.00) {
+        if (gender == 'M') {
+            if (height >= 1.68 && weight >= 49.90) {
+                printf("\nCongratulations!You are eligible to apply the post.\n");
+            } else {
+                printf("\nSorry you are not eligible to apply the post.\nReason: Your physical stat does not meet our requirement.\n");
+            }
+        } else if (gender == 'F') {
+            if (height >= 1.60 && weight >= 47) {
+                printf("\nCongratulations!You are eligible to apply the post.\n");
+            } else {
+                printf("\nSorry you are not eligible to apply the post.\nReason: Your physical stat does not meet our requirement.\n");
+            }
+        } else {
+            printf("\nGender Input Invalid .\n");
+        }
+    } else {
+        printf("\nSorry you are not eligible to apply the post.\nReason: Your academic stat does not meet our requirement..\n");
+    }
+
+
+}
