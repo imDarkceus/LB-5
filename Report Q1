@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    float height, weight, gpa;
+    char gender;
+
+
+    // Input data
+    printf(" age: ");
+    scanf("%d", &age);
+
+    printf(" gender (M/F): ");
+    scanf(" %c", &gender);
+
+    printf("height : ");
+    scanf("%f", &height);
+
+    printf("weight): ");
+    scanf("%f", &weight);
+
+    printf("GPA: ");
+    scanf("%f", &gpa);
+
+
+    if (age >= 17 && age <= 20 && gpa >= 3.00) {
+        if (gender == 'M') {
+            if (height >= 1.68 && weight >= 49.90) {
+                printf("ok.\n");
+            } else {
+                printf("ffffffffffffffffffffffffffffffffffffff.\n");
+            }
+        } else if (gender == 'F') {
+            if (height >= 1.60 && weight >= 47) {
+                printf("ok.\n");
+            } else {
+                printf("ffffffffffffffffffffffffffffffffffffffffy.\n");
+            }
+        } else {
+            printf("Invalid .\n");
+        }
+    } else {
+        printf("sorry.\n");
+    }
+
+    return 0;
+}
